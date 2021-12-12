@@ -48,7 +48,7 @@ export default class Feed extends Component {
 
     render() {
         return (
-            <View style={this.state.light_theme ? styles.containerLight : styles.container}>
+          <View style={ // user ternary operator to show light or dark theme}>
                 <SafeAreaView style={styles.droidSafeArea} />
                 <View style={styles.appTitle}>
                     <View style={styles.appIcon}>
@@ -58,7 +58,7 @@ export default class Feed extends Component {
                         ></Image>
                     </View>
                     <View style={styles.appTitleTextContainer}>
-                        <Text style={this.state.light_theme ? styles.appTitleTextLight : styles.appTitleText}>Spectagram</Text>
+                        <Text style={ // user ternary operator to show light or dark theme}>Spectagram</Text>
                     </View>
                 </View>
                 <View style={styles.cardContainer}>
